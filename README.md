@@ -47,6 +47,7 @@ python src/generate_dataset.py
 Outputs:
 artifacts/results.json
 artifacts/results.md
+```
 
 ## Baselines included
 
@@ -103,3 +104,4 @@ Orokpo, S.M.(2025). *OpenMarineData(Synthetic): Streaming Anomaly + Drift Benchm
   url          = {https://github.com/freelansire/marine_dataset_benchmark},
   note         = {Synthetic multi-sensor dataset generator and reproducible benchmark suite for streaming anomaly detection under drift regimes}
 }
+```
