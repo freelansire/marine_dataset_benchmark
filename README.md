@@ -90,8 +90,8 @@ If you use **OpenMarineData (Synthetic): Streaming Anomaly + Drift Benchmark Sui
 
 ## Suggested citation (APA-style)
 
-Orokpo, S. M. (2025). *OpenMarineData (Synthetic): Streaming Anomaly + Drift Benchmark Suite* (Version 0.1.0) [Software]. GitHub. https://github.com/freelansire/marine_dataset_benchmark
-
+Orokpo, S.M.(2025). *OpenMarineData(Synthetic): Streaming Anomaly + Drift Benchmark Suite* (Version 0.1.0) [Software]. GitHub. https://github.com/freelansire/marine_dataset_benchmark
+  
 ## BibTeX
 
 ```bibtex
