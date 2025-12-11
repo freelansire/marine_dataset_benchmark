@@ -4,14 +4,14 @@ A **versioned synthetic multi-sensor dataset** inspired by marine monitoring sys
 **real-time multivariate anomaly detection** under **controlled drift regimes**.
 
 This repository provides:
-- A configurable dataset generator (anomalies + drift)
+- A configurable dataset (20,000 time steps × N sensors) and a generator (anomalies + drift) 
 - A clear benchmark protocol (splits, regimes, taxonomy)
 - Reproducible baseline results (RoLA v2 Lite, Isolation Forest, LSTM Autoencoder)
 
 ---
 
 ## Why this exists
-Real-world marine / environmental sensor streams are often hard to share due to access, licensing, or privacy.
+Real-world marine/environmental sensor streams are often hard to share due to access, licensing, or privacy.
 This benchmark provides a **reproducible substitute** for:
 - testing anomaly detection pipelines in streaming settings
 - evaluating drift robustness (mean/variance/correlation shifts)
