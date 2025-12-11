@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset/benchmark suite in academic work, please cite it using the metadata below."
+title: "OpenMarineData (Synthetic): Streaming Anomaly + Drift Benchmark Suite"
+type: software
+version: 0.1.0
+date-released: "2025-12-10"
+authors:
+  - family-names: "Orokpo"
+    given-names: "Samuel Moses"
+repository-code: "https://github.com/freelansire/marine_dataset_benchmark"
+keywords:
+  - anomaly detection
+  - streaming
+  - multivariate time series
+  - concept drift
+  - sensor fusion
+  - benchmarking
+  - environmental monitoring
+license: "MIT"

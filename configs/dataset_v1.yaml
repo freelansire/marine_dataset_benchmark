@@ -1,0 +1,48 @@
+name: openmarinedata_synth_v1
+seed: 42
+
+sampling_seconds: 60
+n_steps: 20000
+
+sensors:
+  - temperature
+  - turbidity
+  - oxygen
+  - salinity
+  - ph
+  - chlorophyll
+
+base:
+  seasonal_period_steps: 1440        # ~daily if 1-min sampling
+  seasonal_strength: 1.0
+  ar1: 0.6
+  noise_std: 0.3
+  correlation_strength: 0.55
+
+splits:
+  train_frac: 0.60
+  val_frac: 0.20
+  test_frac: 0.20
+
+anomalies:
+  overall_rate: 0.02
+  types:
+    spike: 0.35
+    level_shift: 0.25
+    collective: 0.25
+    dropout: 0.15
+
+drifts:
+  regimes:
+    - type: mean_shift
+      start_frac: 0.35
+      end_frac: 0.50
+      magnitude: 1.0
+    - type: variance_increase
+      start_frac: 0.55
+      end_frac: 0.70
+      factor: 1.8
+    - type: correlation_shift
+      start_frac: 0.72
+      end_frac: 0.88
+      strength_delta: -0.25
