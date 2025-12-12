@@ -100,7 +100,7 @@ Orokpo, S.M.(2025). *OpenMarineData(Synthetic): Streaming Anomaly + Drift Benchm
   author       = {Samuel Moses Orokpo},
   title        = {OpenMarineData (Synthetic): Streaming Anomaly + Drift Benchmark Suite},
   year         = {2025},
-  version      = {0.1.0},
+  version      = {1.0.1},
   url          = {https://github.com/freelansire/marine_dataset_benchmark},
   doi          = {10.5281/zenodo.17905383}
   note         = {Synthetic multi-sensor dataset generator and reproducible benchmark suite for streaming anomaly detection under drift regimes}
