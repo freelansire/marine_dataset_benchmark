@@ -1,0 +1,68 @@
+{
+  "name": "openmarinedata_synth_v1",
+  "seed": 42,
+  "n_steps": 20000,
+  "sampling_seconds": 60,
+  "sensors": [
+    "temperature",
+    "turbidity",
+    "oxygen",
+    "salinity",
+    "ph",
+    "chlorophyll"
+  ],
+  "splits": {
+    "train": [
+      0,
+      12000
+    ],
+    "val": [
+      12000,
+      16000
+    ],
+    "test": [
+      16000,
+      20000
+    ]
+  },
+  "anomaly_taxonomy": [
+    "spike",
+    "level_shift",
+    "collective",
+    "dropout"
+  ],
+  "drift_regimes": [
+    {
+      "type": "mean_shift",
+      "start": 7000,
+      "end": 10000,
+      "params": {
+        "magnitude": 1.0
+      }
+    },
+    {
+      "type": "variance_increase",
+      "start": 11000,
+      "end": 14000,
+      "params": {
+        "factor": 1.8
+      }
+    },
+    {
+      "type": "correlation_shift",
+      "start": 14400,
+      "end": 17600,
+      "params": {
+        "strength_delta": -0.25
+      }
+    }
+  ],
+  "protocol": {
+    "task": "streaming multivariate anomaly detection with drift regimes",
+    "recommended_metrics": [
+      "pointwise_f1_tolerant",
+      "event_f1",
+      "auprc_proxy_scores"
+    ]
+  }
+}
