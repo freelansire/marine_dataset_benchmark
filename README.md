@@ -4,14 +4,14 @@ A **versioned synthetic multi-sensor dataset** inspired by marine monitoring sys
 **real-time multivariate anomaly detection** under **controlled drift regimes**.
 
 This repository provides:
-- A configurable dataset generator (anomalies + drift)
+- A configurable dataset (20,000 time steps × N sensors) and a generator (anomalies + drift) 
 - A clear benchmark protocol (splits, regimes, taxonomy)
 - Reproducible baseline results (RoLA v2 Lite, Isolation Forest, LSTM Autoencoder)
 
 ---
 
 ## Why this exists
-Real-world marine / environmental sensor streams are often hard to share due to access, licensing, or privacy.
+Real-world marine/environmental sensor streams are often hard to share due to access, licensing, or privacy.
 This benchmark provides a **reproducible substitute** for:
 - testing anomaly detection pipelines in streaming settings
 - evaluating drift robustness (mean/variance/correlation shifts)
@@ -47,6 +47,7 @@ python src/generate_dataset.py
 Outputs:
 artifacts/results.json
 artifacts/results.md
+```
 
 ## Baselines included
 
@@ -90,8 +91,8 @@ If you use **OpenMarineData (Synthetic): Streaming Anomaly + Drift Benchmark Sui
 
 ## Suggested citation (APA-style)
 
-Orokpo, S. M. (2025). *OpenMarineData (Synthetic): Streaming Anomaly + Drift Benchmark Suite* (Version 0.1.0) [Software]. GitHub. https://github.com/freelansire/marine_dataset_benchmark
-
+Orokpo, S.M.(2025). *OpenMarineData(Synthetic): Streaming Anomaly + Drift Benchmark Suite* (Version 0.1.0) [Software]. GitHub. https://github.com/freelansire/marine_dataset_benchmark
+  
 ## BibTeX
 
 ```bibtex
@@ -101,5 +102,7 @@ Orokpo, S. M. (2025). *OpenMarineData (Synthetic): Streaming Anomaly + Drift Ben
   year         = {2025},
   version      = {0.1.0},
   url          = {https://github.com/freelansire/marine_dataset_benchmark},
+  doi          = {10.5281/zenodo.xxxxxxx}
   note         = {Synthetic multi-sensor dataset generator and reproducible benchmark suite for streaming anomaly detection under drift regimes}
 }
+```
